@@ -1,1 +1,2 @@
-Creando el repositorio
+Installando las herramientas
+
