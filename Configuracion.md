@@ -62,3 +62,35 @@ Cerrar la terminal y verificar la instalación:
 which yowasp-yosys
 yowasp-yosys -V
 Si no funciona cierra VS Code y vuelve a intentar los dos comandos anteriores
+
+# VHDL a Verilog para esquematicos (opcion simple)
+TerosHDL puede dibujar esquematicos desde Verilog con Yosys. Para VHDL, usa GHDL
+para convertir a Verilog y luego abre el archivo generado.
+
+Manual (un archivo):
+```
+ghdl synth --out=verilog /home/rodrigo/GitHub/HDL/hdl_practice/half_adder.vhd -e half_adder \
+	> /home/rodrigo/GitHub/HDL/hdl_practice/half_adder_from_vhdl.v
+```
+Luego abre el archivo .v generado y usa el icono Schematic viewer.
+
+Una sola orden (script reutilizable dentro del proyecto):
+```
+chmod +x /home/rodrigo/GitHub/HDL/scripts/vhdl2v.sh
+```
+
+Uso:
+```
+/home/rodrigo/GitHub/HDL/scripts/vhdl2v.sh \
+  /home/rodrigo/GitHub/HDL/hdl_practice/half_adder.vhd \
+  half_adder
+```
+
+Salida generada:
+```
+/home/rodrigo/GitHub/HDL/hdl_practice/half_adder_from_vhdl.v
+```
+
+Para ver el esquematico en TerosHDL:
+- Agrega el archivo .v generado al proyecto.
+- Abre el .v generado y usa el icono Schematic viewer.
