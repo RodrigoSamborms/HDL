@@ -38,7 +38,8 @@ sudo apt install yosys
 sudo apt install universal-ctags
 ```
 
-Configurando TerosHDL, una vez que todo esta instalado necesitas decirle a TerosHDL donde encontrar los "motores" que acabas de instalar en WSL Debian.
+# Configurando TerosHDL
+una vez que todo esta instalado necesitas decirle a TerosHDL donde encontrar los "motores" que acabas de instalar en WSL Debian.
 Abre el icono de TerosHDL en la barra lateral
 Ve a configuración (en el icono del engrane)
 Debajo de Herramientas, revisa los directorios para:
