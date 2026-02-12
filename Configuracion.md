@@ -51,3 +51,13 @@ GHDL: Usualmente en /usr/bin/ghdl
 GTKWave: Usualmente en /usr/bin/gtkwave
 
 Tip Pro: Desde que tu estas en WSL, tu usualmente no necesitas teclear la dirección completa; solo teclea iverlog o ghdl en la caja de ajustes debería funcionar si estos estan en tu Linux $PATH.
+
+
+sudo apt update
+sudo apt install -y pipx
+pipx ensurepath
+pipx install yowasp-yosys
+
+Cerrar la terminal y verificar la instalación:
+which yowasp-yosys
+yowasp-yosys -V
