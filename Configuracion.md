@@ -17,6 +17,14 @@ sudo apt install gtkwave
 # Install Build Automation (Essential for TerosHDL)
 sudo apt install make
 ```
+# Para verificar la correcta instalación:
+```
+iverilog -V (Should show the Verilog version)
+
+ghdl -v (Should show the VHDL version)
+
+gtkwave (Should open an empty window)
+```
 
 # Herramientas recomendadas para la extensión de VS Code de TerosHDL 
 ```
