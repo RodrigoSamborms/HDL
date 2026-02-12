@@ -61,3 +61,4 @@ pipx install yowasp-yosys
 Cerrar la terminal y verificar la instalación:
 which yowasp-yosys
 yowasp-yosys -V
+Si no funciona cierra VS Code y vuelve a intentar los dos comandos anteriores
