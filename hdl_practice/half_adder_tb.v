@@ -15,6 +15,8 @@ module half_adder_tb;
 
     // 3. The Test Procedure
     initial begin
+        $dumpfile("build/half_adder.vcd");
+        $dumpvars(0, half_adder_tb);
         $monitor("At time %t: a=%b, b=%b | sum=%b, carry=%b", $time, a, b, sum, carry);
         
         // Test Case 1: 0 + 0
